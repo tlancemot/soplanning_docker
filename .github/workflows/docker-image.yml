@@ -25,4 +25,4 @@ jobs:
       uses: docker/build-push-action@v3
       with:
         push: true
-        tags: soplanning:dev-$(date +%s)
+        tags: soplanning:dev
