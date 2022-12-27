@@ -9,10 +9,10 @@ on:
 jobs:
 
   build:
-
     runs-on: ubuntu-latest
-
     steps:
     - uses: actions/checkout@v3
+    - name: Download SoPlanning sources
+      run: make download-sources
     - name: Build the Docker image
       run: docker build . --file Dockerfile --tag soplanning:dev-$(date +%s)
