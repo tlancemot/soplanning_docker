@@ -26,4 +26,4 @@ jobs:
       with:
         context: .
         push: true
-        tags: tlancemot/soplanning:dev
+        tags: tlancemot/soplanning:1.50.01
