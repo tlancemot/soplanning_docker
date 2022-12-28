@@ -11,4 +11,3 @@ RUN mv "$PHP_INI_DIR/php.ini-production" "$PHP_INI_DIR/php.ini"
 COPY soplanning/ /var/www/html
 COPY database.inc /var/www/html/database.inc
 RUN chown -R www-data:www-data /var/www/html
-USER www-data
